@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Expenses Tracker</title>
-  <link rel="stylesheet" href="Track.css">
+  <link rel="stylesheet" href="Track.css" />
 </head>
 <body>
   <div class="main-container">
@@ -16,16 +16,19 @@
           <option value="income">INCOME</option>
           <option value="expense">EXPENDITURE</option>
         </select>
+
         <div class="section" id="inc" style="display: none;">
-          <input type="text" id="incomeSource" placeholder="Source" required><br>
-          <input type="number" id="incomeAmount" placeholder="Eg:10000" required><br>
-          <input type="date" id="incomeDate" required>
+          <input type="text" id="incomeSource" name="incomeSource" placeholder="Source" required><br>
+          <input type="number" id="incomeAmount" name="incomeAmount" placeholder="Eg:10000" required><br>
+          <input type="date" id="incomeDate" name="incomeDate" required>
         </div>
+
         <div class="section" id="exp" style="display: none;">
-          <input type="text" id="expensePurpose" placeholder="Expense Purpose" required><br>
-          <input type="number" id="expenseAmount" placeholder="Eg:10000" required><br>
-          <input type="date" id="expenseDate" required>
+          <input type="text" id="expensePurpose" name="expensePurpose" placeholder="Expense Purpose" required><br>
+          <input type="number" id="expenseAmount" name="expenseAmount" placeholder="Eg:10000" required><br>
+          <input type="date" id="expenseDate" name="expenseDate" required>
         </div>
+
         <button type="submit">ADD</button>
       </form>
     </div>
