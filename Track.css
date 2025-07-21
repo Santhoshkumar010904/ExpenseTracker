@@ -26,6 +26,7 @@ html, body {
 .adding {
   flex: 1;
   max-width: 500px;
+  border: 2px solid black;
   padding: 40px;
   background-color: white;
   border-radius: 12px;
@@ -129,4 +130,45 @@ button:hover {
   color: #0EA5E9;
   font-size: 20px;
   font-weight: bold;
+}
+#transactionList {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #F0F9FF;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+#transactionList h4 {
+  color: #1E3A8A;
+  margin-bottom: 12px;
+  font-size: 18px;
+  border-bottom: 2px solid #06B6D4;
+  padding-bottom: 6px;
+}
+#list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+#list li {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-left: 5px solid #0EA5E9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  color: #374151;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#list::-webkit-scrollbar {
+  width: 6px;
+}
+#list::-webkit-scrollbar-thumb {
+  background-color: #06B6D4;
+  border-radius: 10px;
 }
