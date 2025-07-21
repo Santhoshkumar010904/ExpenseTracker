@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expenses Tracker</title>
+    <link rel="stylesheet" href="Track.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="adding">
+      <form action="">
+        <h3>ADD INCOME AND EXPENDITURE</h3>
+        <select id="select">
+          <option value="dis">Select Type</option>
+          <option value="income">INCOME</option>
+          <option value="expense">EXPENDITURE</option>
+        </select>
+        <div class="section" id="inc">
+          <input type="text" placeholder="Source" required><br>
+          <input type="number" placeholder="Eg:10000" required><br>
+          <input type="date" required>
+        </div>
+        <div class="section" id="exp">
+          <input type="text" placeholder="Expense Purpose" required><br>
+          <input type="number" placeholder="Eg:10000" required><br>
+          <input type="date" required>
+        </div>
+        <button>ADD</button>
+      </form>
+    </div>
+    <div class="work-area">
+      <h3>Your Analysis </h3>
+      <div class="overview">
+        <div class="cinc">
+            INCOME
+            <p id="tinc">₹0</p>
+        </div>
+        <div class="cexp">
+            EXPENDITURE
+            <p id="texp">₹0</p>
+        </div>
+        <div class="cbala">
+            BALANCE
+            <p id="tbal">₹0</p>
+        </div>
+      </div>
+  </div>
+
+  <script src="Track.js"></script>
+</body>
+
+</html>
