@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Expense Tracker</title>
-  <link rel="stylesheet" href="Track.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expenses Tracker</title>
+  <link rel="stylesheet" href="Track.css">
 </head>
 <body>
   <div class="main-container">
     <div class="adding">
-      <form id="trackerForm">
+      <form id="expenseForm">
         <h3>ADD INCOME AND EXPENDITURE</h3>
-        <select id="selectType" required>
+        <select id="select" required>
           <option value="dis">Select Type</option>
           <option value="income">INCOME</option>
           <option value="expense">EXPENDITURE</option>
         </select>
-
-        <div class="section" id="incomeSection" style="display: none;">
-          <input type="text" id="incomeSource" placeholder="Source" /><br />
-          <input type="number" id="incomeAmount" placeholder="Eg: 10000" /><br />
-          <input type="date" id="incomeDate" />
+        <div class="section" id="inc" style="display: none;">
+          <input type="text" id="incomeSource" placeholder="Source" required><br>
+          <input type="number" id="incomeAmount" placeholder="Eg:10000" required><br>
+          <input type="date" id="incomeDate" required>
         </div>
-
-        <div class="section" id="expenseSection" style="display: none;">
-          <input type="text" id="expensePurpose" placeholder="Expense Purpose" /><br />
-          <input type="number" id="expenseAmount" placeholder="Eg: 10000" /><br />
-          <input type="date" id="expenseDate" />
+        <div class="section" id="exp" style="display: none;">
+          <input type="text" id="expensePurpose" placeholder="Expense Purpose" required><br>
+          <input type="number" id="expenseAmount" placeholder="Eg:10000" required><br>
+          <input type="date" id="expenseDate" required>
         </div>
-
         <button type="submit">ADD</button>
       </form>
     </div>
